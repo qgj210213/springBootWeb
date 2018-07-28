@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>初期登録</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  </script>
+  <p th:text="${dbUser.userName}" />
+  <div style="height: 20px; font-size: 15px">
+    <input type="text" th:text="${message.okInfo}">
+  </div>
+  <button type="" onclick="doinit()">重新登录</button>
+  <a th:href="@{init}">重新登录</a>
+</body>
+</html>

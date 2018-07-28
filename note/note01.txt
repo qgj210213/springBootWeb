@@ -1,0 +1,14 @@
+thymeleaf框架
+_______________________________________________________A
+1.创建一个登陆的画面
+2.
+  controller：ThLoginController创建
+  DbUser Db db_user
+3. 成功返回
+        /thymeleaf/loginOk.html
+        失败返回
+        /thymeleaf/loginError.html
+_______________________________________________________B
+1.成功画面中有检索的案件
+2.检索一个字段显示Girl信息
+3.Girl信息显示在列表上

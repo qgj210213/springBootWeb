@@ -1,0 +1,32 @@
+# server 配置
+server:
+  port: 8080
+# application-prod import
+spring:
+  profiles:
+    active: prod
+# mysql
+  datasource:
+   driver-class-name: com.mysql.jdbc.Driver
+   url: jdbc:mysql://localhost:3306/dbgirl
+   username: root
+   password: root
+#jpa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#thymeleaf 静态配置资源#
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html; charset=utf-8
+# 关闭缓存，即时刷新，上线生产环境需要改为true
+    cache: false
+#设置静态文件路径，js,css等#
+  mvc:
+    static-path-pattern: /static/**

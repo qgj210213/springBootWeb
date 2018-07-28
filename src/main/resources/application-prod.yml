@@ -1,0 +1,20 @@
+
+# 属性配置
+# boob size 
+cupSize: B
+# age
+age: 18
+#content 属性中で属性を使用
+content: "cupSize : ${cupSize}, age : ${age}"
+
+#1つ女性属性を設定
+#1.girl prefixを設定
+#2.クラスGirlProperties.java
+girl:
+ cupSize: A
+ age: 25
+ height: 165
+#message 
+message:
+  errorInfo: ユーザー名又パスワードが違います!
+  okInfo: Welcome To Our Website

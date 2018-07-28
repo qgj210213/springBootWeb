@@ -1,0 +1,83 @@
+/*.m-cnt{
+	margin-top: 20px;
+	padding: 0 10px;
+	width: 500px;
+	height: 500px;
+	border: solid;
+	border-color: red;
+}
+.m-container{
+	margin-top: 10px;
+	width: 400px;
+	height: 400px;
+	border: solid;
+	border-color: blue;
+}
+
+.m-cnt .u-logo div{
+	display: inline-block;
+    width: 22px;
+    height: 24px;
+    margin-top: 10px;
+    float: left;
+}
+.m-cnt .u-inputbox{
+	position: relative;
+	height: 42px;
+	line-height: 42px;
+	padding-left: 40px;
+	margin-top: 0px;
+	float: left;
+}
+
+.inputbox div{
+	border: solid;
+	border-color: yellow;
+
+}*/
+.inputbox{
+	position: relative;
+    height: 44px;
+    margin-bottom: 0px;
+	border: 1px solid #c5cddb;
+	background: #fff;
+    font-size: 12px;
+    line-height: 44px;
+}
+
+.inputbox div{
+	float: left;
+	/*border: solid;*/
+	/*border-color: red;*/
+	height: 40px;
+}
+.inputbox .u-inputbox .d-prdomain{
+
+	height: 30px;
+	width: 200px;
+}
+.inputbox .u-inputbox .j-prdomain{
+
+	height: 30px;
+	width: 60px;
+}
+.ur-change-email {
+    position: relative;
+    width: 320px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+}
+.inputbox .u-logo .u-logo-img1{
+	width: 30px;
+	height: 40px;
+	background: url(../../templates/thymeleaf/img/u-logo-img1.PNG);
+	background-repeat: no-repeat;
+}
+
+.inputbox .u-logo .u-logo-img2{
+	width: 30px;
+	height: 40px;
+	background-image: url(../../templates/thymeleaf/img/u-logo-img2.PNG) ;
+	background-repeat: no-repeat;
+}

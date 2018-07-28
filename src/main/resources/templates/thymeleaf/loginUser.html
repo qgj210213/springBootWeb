@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>初期登録</title>
+</head>
+<body>
+  <h3>画面登録</h3>
+
+  <form th:action="@{login}" th:object="${dbUser}" method="post" th:method="post">
+    <input type="text" th:field="${dbUser.userName}" />
+    <br>
+    <input type="password" th:field="${dbUser.passWd}" />
+    <br>
+    <input type="submit" />
+  </form>
+  <div style="height: 20px; font-size: 15px">
+    <h3 th:text="${message.errorInfo}" />
+  </div>
+</body>
+</html>
