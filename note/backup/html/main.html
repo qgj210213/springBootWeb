@@ -5,28 +5,27 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>初期登録</title>
     <script src="../../static/js/main.js" type="text/javascript" charset="utf-8" async defer></script>
-    <style type="text/css" media="screen">
-    .container-search {
-        margin-top: 5px;
-        height: 25px;
-    }
-    </style>
 </head>
 <!-- ThLoginController -->
 
 <body>
-    <div class="container-top">
+    <div>
         <h3>用户名:<span th:text="${dbUser.userName}" /></h3>
-        <button onclick="doLogin()">重新登录</button>
+        <button id="btn">重新登录</button>
         <button onclick="doRegist()">注册</button>
         <!--    <br>
  <a th:href="@{init}">重新登录</a>
  <a th:href="@{regist}">注册</a> -->
     </div>
-    <div class="container-search">
-        <input type="search" name="userName" value="" placeholder="qgj210">
-        <button type="" onclick="doSearch()">检索</button>
-    </div>
+    <script type="text/javascript">
+    var demo = document.getElementById("btn");
+    demo.onclick = function doinit() {
+        // window.location.href="loginUser.html";
+        // alert("click");
+        window.location.href = "init";
+
+    }
+    </script>
     <div style="height: 20px; font-size: 15px">
         <h3 th:text="${message.reistInfo}" />
         <h3 th:text="${message.okInfo}" />

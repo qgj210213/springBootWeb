@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * 1.首先注入MessageSource
  * 2.然后通过LocaleContextHolder.getLocale()来获取当前Locale
  * 3.最后通messageSource.getMessage("hello.world", null,locale)来去对应的国际化资源文件中取消息。
+ * #国际化资源文件
+ * messages:
+ *   basename: i18n/messages/messages
  *
  */
 @Controller

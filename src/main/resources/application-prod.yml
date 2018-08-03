@@ -18,3 +18,4 @@ girl:
 message:
   errorInfo: ユーザー名又パスワードが違います!
   okInfo: Welcome To Our Website
+  reistInfo: ユーザーもう存在する
